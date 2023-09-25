@@ -1,10 +1,18 @@
 version: '3'
 services:
-  # React app service
   react-app:
     build:
-      context: ./eye-sa-pen # Replace with your app's directory
+      context: ./react-app
     ports:
-      - "3000:3000" # Map the React development server port
+      - "3000:3000" # Map the React app server port
+    environment:
+      - PUBLIC_URL=http://localhost:3000
     volumes:
-      - .:/app # Mount the app code into the container
+      - ./react-app:/app # Mount the app code (local:container)
+  poc-api:
+    build:
+      context: ./api
+    ports:
+      - "3001:3001" # Map the API (JSON server) port
+    volumes:
+      - ./api:/app # Mount the app code (local:container)
