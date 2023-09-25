@@ -1,0 +1,10 @@
+version: '3'
+services:
+  # React app service
+  react-app:
+    build:
+      context: ./eye-sa-pen # Replace with your app's directory
+    ports:
+      - "3000:3000" # Map the React development server port
+    volumes:
+      - .:/app # Mount the app code into the container
