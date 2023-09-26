@@ -23,7 +23,6 @@ export const investmentOptionsApi = createApi({
             }),
         }),
         listFundApplicationsById: builder.query({
-            // query: (fundId) => `investment-options/${fundId}?_embed=fund-applications&_sort=id&_order=desc`
             query: (fundId) => `fund-applications?investment-optionId_like=${fundId}&_sort=id&_order=desc`
         })
     }),

@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState} from 'react';
+import React, { forwardRef, useEffect, useState } from 'react';
 import { Grid, TextField, Button } from '@mui/material';
 import { usePostFundMutation } from "./services/investmentOptions";
 import MuiAlert from '@mui/material/Alert';

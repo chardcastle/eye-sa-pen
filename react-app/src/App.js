@@ -1,13 +1,9 @@
 import React, { useState } from "react"
-import { ApiProvider } from '@reduxjs/toolkit/query/react'
+import { ApiProvider } from "@reduxjs/toolkit/query/react"
 import { investmentOptionsApi, useGetOptionsQuery, useListFundApplicationsByIdQuery } from "./services/investmentOptions"
-import * as MaterialUI from "@mui/material";
-import { NavLink } from "react-router-dom";
-import { FormControl, InputLabel, MenuItem, Select} from "@mui/material";
-
-const {
-    Typography
-} = MaterialUI
+import { Typography } from "@mui/material"
+import { NavLink } from "react-router-dom"
+import { FormControl, InputLabel, MenuItem, Select } from "@mui/material"
 
 function InvestmentOption() {
     const [fundId, setFundId ] = useState("")
@@ -19,7 +15,7 @@ function InvestmentOption() {
     } = useGetOptionsQuery()
 
     const handleChange = (e) => {
-        setFundId(String(e.target.value));
+        setFundId(String(e.target.value))
     }
 
     return (

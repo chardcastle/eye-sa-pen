@@ -16,46 +16,5 @@
       "owner": "Hipster united"
     }
   ],
-  "fund-applications": [
-    {
-      "investment-optionId": 3,
-      "amount": "45465",
-      "id": 1
-    },
-    {
-      "investment-optionId": 2,
-      "amount": "789",
-      "id": 2
-    },
-    {
-      "investment-optionId": 2,
-      "amount": "456",
-      "id": 3
-    },
-    {
-      "investment-optionId": 2,
-      "amount": "456",
-      "id": 4
-    },
-    {
-      "investment-optionId": 3,
-      "amount": "045",
-      "id": 5
-    },
-    {
-      "investment-optionId": 1,
-      "amount": "12",
-      "id": 6
-    },
-    {
-      "investment-optionId": 1,
-      "amount": "9999",
-      "id": 7
-    },
-    {
-      "investment-optionId": 1,
-      "amount": "666",
-      "id": 8
-    }
-  ]
+  "fund-applications": []
 }
